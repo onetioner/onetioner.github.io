@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>OneTion的芝士库 - 芝士库</title><meta name="author" content="Tion One"><meta name="copyright" content="Tion One"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="在芝士库中沉沦">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OneTion的芝士库">
+<meta property="og:url" content="https://onetioner.github.io/page/3/index.html">
+<meta property="og:site_name" content="OneTion的芝士库">
+<meta property="og:description" content="在芝士库中沉沦">
+<meta property="og:locale">
+<meta property="og:image" content="https://onetioner.github.io/img/butterfly-icon.png">
+<meta property="article:author" content="Tion One">
+<meta property="article:tag" content="暂无关键字">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://onetioner.github.io/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://onetioner.github.io/page/3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'OneTion的芝士库',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">OneTion的芝士库</span></a></span><div id="menus"></div></nav><div id="site-info"><h1 id="site-title">OneTion的芝士库</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/12/24/A4_SSM/08-MyBatisPlus/" title="08-MyBatisPlus">08-MyBatisPlus</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T03:33:08.144Z" title="Created 2024-12-24 11:33:08">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/SSM/">SSM</a></span></div><div class="content">MyBatisPlus今日目标  基于MyBatisPlus完成标准Dao的增删改查功能 掌握MyBatisPlus中的分页及条件查询构建 掌握主键ID的生成策略 了解MyBatisPlus的代码生成器  1，MyBatisPlus入门案例与简介这一节我们来学习下MyBatisPlus的入门案例与简介，这个和其他课程都不太一样，其他的课程都是先介绍概念，然后再写入门案例。而对于MyBatisPlus的学习，我们将顺序做了调整，主要的原因MyBatisPlus主要是对MyBatis的简化，所有我们先体会下它简化在哪，然后再学习它是什么，以及它帮我们都做哪些事。 1.1...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/12/24/A4_SSM/07-SpringBoot/" title="07-SpringBoot">07-SpringBoot</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T03:32:39.595Z" title="Created 2024-12-24 11:32:39">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/SSM/">SSM</a></span></div><div class="content">SpringBoot今日目标：   掌握基于SpringBoot框架的程序开发步骤 熟练使用SpringBoot配置信息修改服务器配置 基于SpringBoot的完成SSM整合项目开发   1，SpringBoot简介SpringBoot 是由 Pivotal 团队提供的全新框架，其设计目的是用来&#x3D;&#x3D;简化&#x3D;&#x3D; Spring 应用的&#x3D;&#x3D;初始搭建&#x3D;&#x3D;以及&#x3D;&#x3D;开发过程&#x3D;&#x3D;。 使用了 Spring 框架后已经简化了我们的开发。而 SpringBoot 又是对 Spring 开发进行简化的，可想而知 SpringBoot 使用的简单及广泛性。既然 SpringBoot 是用来简化 Spring 开发的，那我们就先回顾一下，以 SpringMVC 开发为例：  创建工程，并在 pom.xml 配置文件中配置所依赖的坐标     编写 web3.0 的配置类 作为 web 程序，web3.0 的配置类不能缺少，而这个配置类还是比较麻烦的，代码如下      编写...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/12/24/A4_SSM/06-Maven%E9%AB%98%E7%BA%A7/" title="06-Maven高级">06-Maven高级</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T03:31:45.298Z" title="Created 2024-12-24 11:31:45">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/SSM/">SSM</a></span></div><div class="content">Maven高级今日目标   理解并实现分模块开发 能够使用聚合工程快速构建项目 能够使用继承简化项目配置 能够根据需求配置生成、开发、测试环境，并在各个环境间切换运行 了解Maven的私服   1，分模块开发1.1...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/12/24/A4_SSM/05-SpringMVC/" title="05-SpringMVC">05-SpringMVC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T03:31:15.432Z" title="Created 2024-12-24 11:31:15">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/SSM/">SSM</a></span></div><div class="content">SpringMVC_day02今日内容   完成SSM的整合开发 能够理解并实现统一结果封装与统一异常处理 能够完成前后台功能整合开发 掌握拦截器的编写   1，SSM整合前面我们已经把Mybatis、Spring和SpringMVC三个框架进行了学习，今天主要的内容就是把这三个框架整合在一起完成我们的业务功能开发，具体如何来整合，我们一步步来学习。 1.1 流程分析(1) 创建工程  创建一个Maven的web工程 pom.xml添加SSM需要的依赖jar包 编写Web项目的入口配置类，实现AbstractAnnotationConfigDispatcherServletInitializer重写以下方法 getRootConfigClasses()	：返回Spring的配置类-&gt;需要&#x3D;&#x3D;SpringConfig&#x3D;&#x3D;配置类 getServletConfigClasses()...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/12/24/A4_SSM/04-SpringMVC/" title="04-SpringMVC">04-SpringMVC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T03:29:11.337Z" title="Created 2024-12-24 11:29:11">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/SSM/">SSM</a></span></div><div class="content">...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/12/24/A4_SSM/03-Spring/" title="03-Spring">03-Spring</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T03:28:44.113Z" title="Created 2024-12-24 11:28:44">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/SSM/">SSM</a></span></div><div class="content">Spring_day03今日目标   理解并掌握AOP相关概念 能够说出AOP的工作流程 能运用AOP相关知识完成对应的案例编写 重点掌握Spring的声明式事务管理   1，AOP简介前面我们在介绍Spring的时候说过，Spring有两个核心的概念，一个是IOC/DI，一个是AOP。 前面已经对IOC/DI进行了系统的学习，接下来要学习它的另一个核心内容，就是&#x3D;&#x3D;AOP&#x3D;&#x3D;。 对于AOP,我们前面提过一句话是:&#x3D;&#x3D;AOP是在不改原有代码的前提下对其进行增强。&#x3D;&#x3D; 对于下面的内容，我们主要就是围绕着这一句话进行展开学习，主要学习两方面内容AOP核心概念,AOP作用: 1.1 什么是AOP? AOP(Aspect Oriented Programming)面向切面编程，一种编程范式，指导开发者如何组织程序结构。 OOP(Object Oriented...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/12/24/A4_SSM/02-Spring/" title="02-Spring">02-Spring</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T03:28:19.251Z" title="Created 2024-12-24 11:28:19">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/SSM/">SSM</a></span></div><div class="content">Spring_day02今日目标   掌握IOC&#x2F;DI配置管理第三方bean 掌握IOC&#x2F;DI的注解开发 掌握IOC&#x2F;DI注解管理第三方bean 完成Spring与Mybatis及Junit的整合开发   1，IOC&#x2F;DI配置管理第三方bean前面所讲的知识点都是基于我们自己写的类，现在如果有需求让我们去管理第三方jar包中的类，该如何管理? 1.1 案例:数据源对象管理在这一节中，我们将通过一个案例来学习下对于第三方bean该如何进行配置管理。 以后我们会用到很多第三方的bean,本次案例将使用咱们前面提到过的数据源Druid(德鲁伊)和C3P0来配置学习下。 1.1.1 环境准备学习之前，先来准备下案例环境:  创建一个Maven项目   pom.xml添加依赖 1234567&lt;dependencies&gt;    &lt;dependency&gt;        &lt;groupId&gt;org.springframework&lt;/groupId&gt;       ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/12/24/A4_SSM/01-Spring/" title="01-Spring">01-Spring</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T03:27:24.387Z" title="Created 2024-12-24 11:27:24">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/SSM/">SSM</a></span></div><div class="content">Spring_day01今日目标   掌握Spring相关概念 完成IOC&#x2F;DI的入门案例编写 掌握IOC的相关配置与使用 掌握DI的相关配置与使用   1，课程介绍对于一门新技术，我们需要从为什么要学、学什么以及怎么学这三个方向入手来学习。那对于Spring来说: 1.1...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/12/24/A1_JavaWeb/day14-%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/" title="Day-14-综合案例">Day-14-综合案例</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T03:19:16.715Z" title="Created 2024-12-24 11:19:16">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">综合案例今日目标：   能够完成查询所有功能 能够完成添加功能 能够理解 BaseServlet 思想 能够完成批量删除功能 能够完成分页查询功能 能够完成条件查询功能   1，功能介绍 以上是我们在综合案例要实现的功能。对数据的除了对数据的增删改查功能外，还有一些复杂的功能，如 批量删除、分页查询、条件查询 等功能  批量删除 功能：每条数据前都有复选框，当我选中多条数据并点击 批量删除 按钮后，会发送请求到后端并删除数据库中指定的多条数据。 分页查询 功能：当数据库中有很多数据时，我们不可能将所有的数据展示在一页里，这个时候就需要分页展示数据。 条件查询 功能：数据库量大的时候，我们就需要精确的查询一些想看到的数据，这个时候就需要通过条件查询。  这里的 修改品牌 和 删除品牌 功能在课程上不做讲解，留作同学来下的练习。 2，环境准备环境准备我们主要完成以下两件事即可  将资料的 brand-case 模块导入到 idea中 执行资料中提供的 tb_brand.sql脚本  2.1  工程准备将 04-资料\01-初始工程 中的 brand-case 工程导入到我们自己的...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/12/24/A1_JavaWeb/day13-VUE&amp;Element&amp;%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/" title="Day-13-VUE&amp;Element&amp;综合案例">Day-13-VUE&amp;Element&amp;综合案例</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T03:18:25.918Z" title="Created 2024-12-24 11:18:25">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JavaWeb/">JavaWeb</a></span></div><div class="content">VUE&amp;Element今日目标：   能够使用VUE中常用指令和插值表达式 能够使用VUE生命周期函数 mounted 能够进行简单的 Element 页面修改 能够完成查询所有功能 能够完成添加功能   1，VUE1.1  概述接下来我们学习一款前端的框架，就是 VUE。 &#x3D;&#x3D;Vue 是一套前端框架，免除原生JavaScript中的DOM操作，简化书写。&#x3D;&#x3D; 我们之前也学习过后端的框架 Mybatis ，Mybatis 是用来简化 jdbc 代码编写的；而 VUE 是前端的框架，是用来简化 JavaScript 代码编写的。前一天我们做了一个综合性的案例，里面进行了大量的DOM操作，如下   学习了 VUE 后，这部分代码我们就不需要再写了。那么 VUE 是如何简化 DOM 书写呢？ &#x3D;&#x3D;基于MVVM(Model-View-ViewModel)思想，实现数据的双向绑定，将编程的关注点放在数据上。&#x3D;&#x3D;之前我们是将关注点放在了 DOM 操作上；而要了解 MVVM 思想，必须先聊聊 MVC...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Tion One</div><div class="author-info-description">在芝士库中沉沦</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">67</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/24/A8_Microservice/07-Elasticsearch/" title="07-Elasticsearch">07-Elasticsearch</a><time datetime="2024-12-24T03:47:29.582Z" title="Created 2024-12-24 11:47:29">2024-12-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/24/A8_Microservice/06-Elasticsearch/" title="06-Elasticsearch">06-Elasticsearch</a><time datetime="2024-12-24T03:46:59.831Z" title="Created 2024-12-24 11:46:59">2024-12-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/24/A8_Microservice/05-Elasticsearch/" title="05-Elasticsearch">05-Elasticsearch</a><time datetime="2024-12-24T03:46:10.237Z" title="Created 2024-12-24 11:46:10">2024-12-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/24/A8_Microservice/04-RabbitMQ/" title="04-RabbitMQ">04-RabbitMQ</a><time datetime="2024-12-24T03:45:43.647Z" title="Created 2024-12-24 11:45:43">2024-12-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/24/A8_Microservice/03-Docker/" title="03-Docker">03-Docker</a><time datetime="2024-12-24T03:45:20.250Z" title="Created 2024-12-24 11:45:20">2024-12-24</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JavaSE/"><span class="card-category-list-name">JavaSE</span><span class="card-category-list-count">24</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JavaWeb/"><span class="card-category-list-name">JavaWeb</span><span class="card-category-list-count">14</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Microservice/"><span class="card-category-list-name">Microservice</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/ReggieTakeOut/"><span class="card-category-list-name">ReggieTakeOut</span><span class="card-category-list-count">13</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/SSM/"><span class="card-category-list-name">SSM</span><span class="card-category-list-count">8</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/JavaSE/" style="font-size: 1.5em; color: #99a9bf">JavaSE</a> <a href="/tags/Microservice/" style="font-size: 1.1em; color: #999">Microservice</a> <a href="/tags/JavaWeb/" style="font-size: 1.4em; color: #99a5b6">JavaWeb</a> <a href="/tags/ReggieTakeOut/" style="font-size: 1.3em; color: #99a1ac">ReggieTakeOut</a> <a href="/tags/SSM/" style="font-size: 1.2em; color: #999da3">SSM</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/12/">
+          <span class="card-archive-list-date">December 2024</span>
+          <span class="card-archive-list-count">67</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">67</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-12-24T12:10:32.212Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By Tion One</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
